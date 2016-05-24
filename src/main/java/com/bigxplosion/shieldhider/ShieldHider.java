@@ -35,9 +35,9 @@ public class ShieldHider {
 			final ModelResourceLocation shield1 = new ModelResourceLocation("shieldhider:shield1");
 			final ModelResourceLocation shield2 = new ModelResourceLocation("shieldhider:shield2");
 
-			ModelLoader.registerItemVariants(Items.shield, shield1, shield2);
+			ModelLoader.registerItemVariants(Items.SHIELD, shield1, shield2);
 
-			ModelLoader.setCustomMeshDefinition(Items.shield, new ItemMeshDefinition() {
+			ModelLoader.setCustomMeshDefinition(Items.SHIELD, new ItemMeshDefinition() {
 				@Override
 				public ModelResourceLocation getModelLocation(ItemStack stack) {
 					return hidingMode == 1 ? shield1 : shield2;
